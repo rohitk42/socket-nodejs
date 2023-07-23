@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Application</title>
+    
+  </head>
+  <body>
+    <script src="/socket.io/socket.io.js"></script>
+    
+    <form id="userNameForm" action="">
+      <label>Enter Your Name</label>
+      <input id="userName" autocomplete="off" /><button>Enter</button>
+    </form>
+    <label id="showUserName"></label>
+    <br>
+
+    <form id="roomForm" action="" hidden="true">
+      <label>Enter Room Name</label>
+      <input id="roomName" autocomplete="off" /><button>Enter</button>
+    </form>
+    <label id="showRoomName"></label>
+
+    <ul id="message" hidden="true"></ul>
+    
+    <form id="userMessageForm" action="" hidden="true">
+      <label>Enter Your Message</label>
+      <input id="userMessage" autocomplete="off" /><button>Send</button>
+    </form>
+    <script src="./script.js"></script>
+    
+  </body>
+</html>
